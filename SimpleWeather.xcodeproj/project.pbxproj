@@ -64,7 +64,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		60CC2EC0E0B64B4FA10B1AFE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		129BC16E928ABD238A8D0698 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		867A4FA41831B19B003F9195 /* WXController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXController.h; sourceTree = "<group>"; };
 		867A4FA51831B19B003F9195 /* WXController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXController.m; sourceTree = "<group>"; };
 		867A4FA81831C733003F9195 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
@@ -117,6 +117,7 @@
 		868735E41831A1E700C0CCFA /* SimpleWeatherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleWeatherTests-Info.plist"; sourceTree = "<group>"; };
 		868735E61831A1E700C0CCFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		868735E81831A1E700C0CCFA /* SimpleWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleWeatherTests.m; sourceTree = "<group>"; };
+		87B7A014A878E2034862B69D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E9ED9A7D37514874BEF21452 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -206,7 +207,7 @@
 				868735E21831A1E700C0CCFA /* SimpleWeatherTests */,
 				868735C21831A1E700C0CCFA /* Frameworks */,
 				868735C11831A1E700C0CCFA /* Products */,
-				60CC2EC0E0B64B4FA10B1AFE /* Pods.xcconfig */,
+				BCDF8F7BAE7400A2EE863CE3 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -269,6 +270,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BCDF8F7BAE7400A2EE863CE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87B7A014A878E2034862B69D /* Pods.debug.xcconfig */,
+				129BC16E928ABD238A8D0698 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,6 +291,7 @@
 				868735BD1831A1E700C0CCFA /* Frameworks */,
 				868735BE1831A1E700C0CCFA /* Resources */,
 				C036182324DB4B2E9F4108AF /* Copy Pods Resources */,
+				A829A6A19BA5B92AD14323FF /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -403,6 +414,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		A829A6A19BA5B92AD14323FF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C036182324DB4B2E9F4108AF /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -415,7 +441,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -547,7 +573,7 @@
 		};
 		868735ED1831A1E700C0CCFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60CC2EC0E0B64B4FA10B1AFE /* Pods.xcconfig */;
+			baseConfigurationReference = 87B7A014A878E2034862B69D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -561,7 +587,7 @@
 		};
 		868735EE1831A1E700C0CCFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 60CC2EC0E0B64B4FA10B1AFE /* Pods.xcconfig */;
+			baseConfigurationReference = 129BC16E928ABD238A8D0698 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
