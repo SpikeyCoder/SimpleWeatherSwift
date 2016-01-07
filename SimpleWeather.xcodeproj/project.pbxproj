@@ -53,6 +53,8 @@
 		9339C4B352D241B0BA3026EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9ED9A7D37514874BEF21452 /* libPods.a */; };
 		F71192741C3EAC7400EA1802 /* WXViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192731C3EAC7300EA1802 /* WXViewModel.swift */; };
 		F71192761C3EACA100EA1802 /* WXManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192751C3EACA100EA1802 /* WXManager.swift */; };
+		F71192781C3EBB6E00EA1802 /* WXControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192771C3EBB6E00EA1802 /* WXControllerDataSource.swift */; };
+		F711927A1C3EBBBA00EA1802 /* WXController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192791C3EBBBA00EA1802 /* WXController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		F71192721C3EAC7300EA1802 /* SimpleWeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleWeather-Bridging-Header.h"; sourceTree = "<group>"; };
 		F71192731C3EAC7300EA1802 /* WXViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXViewModel.swift; sourceTree = "<group>"; };
 		F71192751C3EACA100EA1802 /* WXManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXManager.swift; sourceTree = "<group>"; };
+		F71192771C3EBB6E00EA1802 /* WXControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXControllerDataSource.swift; sourceTree = "<group>"; };
+		F71192791C3EBBBA00EA1802 /* WXController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +203,8 @@
 				867A4FEA1831DF0B003F9195 /* WXCondition.m */,
 				867A4FA41831B19B003F9195 /* WXController.h */,
 				867A4FA51831B19B003F9195 /* WXController.m */,
+				F71192771C3EBB6E00EA1802 /* WXControllerDataSource.swift */,
+				F71192791C3EBBBA00EA1802 /* WXController.swift */,
 				F71192731C3EAC7300EA1802 /* WXViewModel.swift */,
 				F71192751C3EACA100EA1802 /* WXManager.swift */,
 				867A4FE01831DE8C003F9195 /* WXManager.h */,
@@ -466,7 +472,9 @@
 				868735D41831A1E700C0CCFA /* AppDelegate.m in Sources */,
 				868735D01831A1E700C0CCFA /* main.m in Sources */,
 				867A4FA61831B19B003F9195 /* WXController.m in Sources */,
+				F711927A1C3EBBBA00EA1802 /* WXController.swift in Sources */,
 				F71192761C3EACA100EA1802 /* WXManager.swift in Sources */,
+				F71192781C3EBB6E00EA1802 /* WXControllerDataSource.swift in Sources */,
 				867A4FEB1831DF0C003F9195 /* WXCondition.m in Sources */,
 				F71192741C3EAC7400EA1802 /* WXViewModel.swift in Sources */,
 			);
