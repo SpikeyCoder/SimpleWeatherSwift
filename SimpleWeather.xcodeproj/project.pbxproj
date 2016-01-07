@@ -51,6 +51,8 @@
 		868735E71831A1E700C0CCFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 868735E51831A1E700C0CCFA /* InfoPlist.strings */; };
 		868735E91831A1E700C0CCFA /* SimpleWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 868735E81831A1E700C0CCFA /* SimpleWeatherTests.m */; };
 		9339C4B352D241B0BA3026EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9ED9A7D37514874BEF21452 /* libPods.a */; };
+		F71192741C3EAC7400EA1802 /* WXViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192731C3EAC7300EA1802 /* WXViewModel.swift */; };
+		F71192761C3EACA100EA1802 /* WXManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192751C3EACA100EA1802 /* WXManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,9 @@
 		868735E81831A1E700C0CCFA /* SimpleWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleWeatherTests.m; sourceTree = "<group>"; };
 		87B7A014A878E2034862B69D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E9ED9A7D37514874BEF21452 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F71192721C3EAC7300EA1802 /* SimpleWeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleWeather-Bridging-Header.h"; sourceTree = "<group>"; };
+		F71192731C3EAC7300EA1802 /* WXViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXViewModel.swift; sourceTree = "<group>"; };
+		F71192751C3EACA100EA1802 /* WXManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +199,8 @@
 				867A4FEA1831DF0B003F9195 /* WXCondition.m */,
 				867A4FA41831B19B003F9195 /* WXController.h */,
 				867A4FA51831B19B003F9195 /* WXController.m */,
+				F71192731C3EAC7300EA1802 /* WXViewModel.swift */,
+				F71192751C3EACA100EA1802 /* WXManager.swift */,
 				867A4FE01831DE8C003F9195 /* WXManager.h */,
 				867A4FE11831DE8C003F9195 /* WXManager.m */,
 				867A4FE31831DE99003F9195 /* WXDailyForecast.h */,
@@ -208,6 +215,7 @@
 				868735C21831A1E700C0CCFA /* Frameworks */,
 				868735C11831A1E700C0CCFA /* Products */,
 				BCDF8F7BAE7400A2EE863CE3 /* Pods */,
+				F71192721C3EAC7300EA1802 /* SimpleWeather-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -326,6 +334,7 @@
 		868735B81831A1E700C0CCFA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Ryan Nystrom";
 				TargetAttributes = {
@@ -457,7 +466,9 @@
 				868735D41831A1E700C0CCFA /* AppDelegate.m in Sources */,
 				868735D01831A1E700C0CCFA /* main.m in Sources */,
 				867A4FA61831B19B003F9195 /* WXController.m in Sources */,
+				F71192761C3EACA100EA1802 /* WXManager.swift in Sources */,
 				867A4FEB1831DF0C003F9195 /* WXCondition.m in Sources */,
+				F71192741C3EAC7400EA1802 /* WXViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,10 +588,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleWeather/SimpleWeather-Prefix.pch";
 				INFOPLIST_FILE = "SimpleWeather/SimpleWeather-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleWeather-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -591,10 +606,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleWeather/SimpleWeather-Prefix.pch";
 				INFOPLIST_FILE = "SimpleWeather/SimpleWeather-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SimpleWeather-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
