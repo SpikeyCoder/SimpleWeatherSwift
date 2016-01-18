@@ -53,6 +53,10 @@ extension RACSignal {
     }
 }
 
+func RACObserve(target: NSObject!, keyPath: String) -> RACSignal  {
+    return target.rac_valuesForKeyPath(keyPath, observer: target)
+}
+
 class RACSignalEx {
     class func combineLatestAs<T, U, R: AnyObject>(signals:[RACSignal], reduce:(T,U) -> R) -> RACSignal {
         return RACSignal.combineLatest(signals).mapAs {

@@ -9,7 +9,15 @@
 import UIKit
 
 class CurrentTemperatureViewController: UIViewController {
-
+    @IBOutlet weak var currentTempLabel: UILabel!
+    @IBOutlet weak var highLowTempLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var conditionsLabel: UILabel!
+    @IBOutlet weak var weatherImageView: UIImageView!
+    
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var blurredBackgroundImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

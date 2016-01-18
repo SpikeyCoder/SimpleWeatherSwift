@@ -13,11 +13,32 @@ import Mantle
 class CurrentTemperatureDataController: NSObject {
     var currentTemperature : CurrentTemperature
     var currentCoordinate : CLLocationCoordinate2D?
+    let apiKey = "8a9a4b36a224b8b0d349e971d321541f"
     override init() {
         self.currentTemperature = CurrentTemperature()
+        if let currentTempSignal:RACSignal = self.updateCurrentTemperature(){
+            RACObserve(self, keyPath: "currentLocation").flattenMap({ (newLocation:CLLocation) -> RACStream! in
+                return RACSignal.combineLatest([currentTempSignal])
+            })
+            
+            
+        }
+       
+//        RACObserve(self, currentLocation)
+//            ignore:nil]
+//            // Flatten and subscribe to all 3 signals when currentLocation updates
+//            flattenMap:^(CLLocation *newLocation) {
+//            return
+        
+                
+//                
+//                RACSignal.merge:[self.updateCurrentTemperature()];
+//            }] deliverOn:RACScheduler.mainThreadScheduler]
+//            subscribeError:^(NSError *error) {
+//            [TSMessage showNotificationWithTitle:@"Error" subtitle:@"There was a problem fetching the latest weather." type:TSMessageNotificationTypeError];
     }
  
-    func updateCurrentConditions() -> RACSignal?
+    func updateCurrentTemperature() -> RACSignal?
     {
         if let coordinate: CLLocationCoordinate2D = self.currentCoordinate
         {
@@ -34,7 +55,7 @@ class CurrentTemperatureDataController: NSObject {
     
     func fetchCurrentTemperatureForLocation(coordinate :CLLocationCoordinate2D) -> RACSignal?
     {
-        let urlString = "http://api.openweathermap.org/data/2.5/weather?lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&units=imperial"
+        let urlString = "http://api.openweathermap.org/data/2.5/weather?lat=\(coordinate.latitude)&lon=\(coordinate.longitude)&units=imperial&APPID=\(self.apiKey)"
         if let url:NSURL = NSURL(string: urlString)
         {
             return fetchJSONFromURL(url).map { (json:AnyObject!) in
@@ -72,12 +93,6 @@ class CurrentTemperatureDataController: NSObject {
             })
         }
     }
-    
-    
-//    - (RACSignal *)updateCurrentConditions {
-//    return [[self.client fetchCurrentConditionsForLocation:self.currentLocation.coordinate] doNext:^(WXCondition *condition) {
-//    self.currentCondition = condition;
-//    }];
     
 }
 
