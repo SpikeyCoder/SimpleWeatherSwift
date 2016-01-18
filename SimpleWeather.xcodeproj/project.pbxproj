@@ -50,11 +50,21 @@
 		868735DF1831A1E700C0CCFA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868735C71831A1E700C0CCFA /* UIKit.framework */; };
 		868735E71831A1E700C0CCFA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 868735E51831A1E700C0CCFA /* InfoPlist.strings */; };
 		868735E91831A1E700C0CCFA /* SimpleWeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 868735E81831A1E700C0CCFA /* SimpleWeatherTests.m */; };
-		9339C4B352D241B0BA3026EF /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E9ED9A7D37514874BEF21452 /* libPods.a */; };
 		F71192741C3EAC7400EA1802 /* WXViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192731C3EAC7300EA1802 /* WXViewModel.swift */; };
 		F71192761C3EACA100EA1802 /* WXManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192751C3EACA100EA1802 /* WXManager.swift */; };
-		F71192781C3EBB6E00EA1802 /* WXControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192771C3EBB6E00EA1802 /* WXControllerDataSource.swift */; };
-		F711927A1C3EBBBA00EA1802 /* WXController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F71192791C3EBBBA00EA1802 /* WXController.swift */; };
+		F718DEFF1C4D290C00573251 /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718DEFC1C4D290C00573251 /* Mantle.framework */; };
+		F718DF001C4D290C00573251 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718DEFD1C4D290C00573251 /* ReactiveCocoa.framework */; };
+		F718DF011C4D290C00573251 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F718DEFE1C4D290C00573251 /* Result.framework */; };
+		F718DF091C4D2A2500573251 /* TSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = F718DF041C4D2A2500573251 /* TSBlurView.m */; };
+		F718DF0A1C4D2A2500573251 /* TSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = F718DF061C4D2A2500573251 /* TSMessage.m */; };
+		F718DF0B1C4D2A2500573251 /* TSMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = F718DF081C4D2A2500573251 /* TSMessageView.m */; };
+		F718DF191C4D2BC100573251 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = F718DF161C4D2BC100573251 /* UIImage+ImageEffects.m */; };
+		F718DF1A1C4D2BC100573251 /* UIImageView+LBBlurredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = F718DF181C4D2BC100573251 /* UIImageView+LBBlurredImage.m */; };
+		F718DF1D1C4D2C8E00573251 /* HexColors.m in Sources */ = {isa = PBXBuildFile; fileRef = F718DF1C1C4D2C8E00573251 /* HexColors.m */; };
+		F718DF1F1C4D3C6600573251 /* RACSignal+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F718DF1E1C4D3C6600573251 /* RACSignal+Extensions.swift */; };
+		F7BA76C41C4D20C00053DE3D /* CurrentTemperatureDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA76C31C4D20C00053DE3D /* CurrentTemperatureDataController.swift */; };
+		F7ED94F21C4C1A7B005CC9FD /* SimpleWeather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7ED94F11C4C1A7B005CC9FD /* SimpleWeather.storyboard */; };
+		F7ED94F91C4C1BA8005CC9FD /* CurrentTemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ED94F81C4C1BA8005CC9FD /* CurrentTemperatureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,12 +132,28 @@
 		868735E61831A1E700C0CCFA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		868735E81831A1E700C0CCFA /* SimpleWeatherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleWeatherTests.m; sourceTree = "<group>"; };
 		87B7A014A878E2034862B69D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		E9ED9A7D37514874BEF21452 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F71192721C3EAC7300EA1802 /* SimpleWeather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleWeather-Bridging-Header.h"; sourceTree = "<group>"; };
 		F71192731C3EAC7300EA1802 /* WXViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXViewModel.swift; sourceTree = "<group>"; };
 		F71192751C3EACA100EA1802 /* WXManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXManager.swift; sourceTree = "<group>"; };
-		F71192771C3EBB6E00EA1802 /* WXControllerDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXControllerDataSource.swift; sourceTree = "<group>"; };
-		F71192791C3EBBBA00EA1802 /* WXController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXController.swift; sourceTree = "<group>"; };
+		F718DEFC1C4D290C00573251 /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = ext/Mantle.framework; sourceTree = "<group>"; };
+		F718DEFD1C4D290C00573251 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ext/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		F718DEFE1C4D290C00573251 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ext/Result.framework; sourceTree = "<group>"; };
+		F718DF031C4D2A2500573251 /* TSBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSBlurView.h; path = ext/TSBlurView.h; sourceTree = "<group>"; };
+		F718DF041C4D2A2500573251 /* TSBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSBlurView.m; path = ext/TSBlurView.m; sourceTree = "<group>"; };
+		F718DF051C4D2A2500573251 /* TSMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSMessage.h; path = ext/TSMessage.h; sourceTree = "<group>"; };
+		F718DF061C4D2A2500573251 /* TSMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSMessage.m; path = ext/TSMessage.m; sourceTree = "<group>"; };
+		F718DF071C4D2A2500573251 /* TSMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TSMessageView.h; path = ext/TSMessageView.h; sourceTree = "<group>"; };
+		F718DF081C4D2A2500573251 /* TSMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TSMessageView.m; path = ext/TSMessageView.m; sourceTree = "<group>"; };
+		F718DF151C4D2BC100573251 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "ext/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		F718DF161C4D2BC100573251 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "ext/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		F718DF171C4D2BC100573251 /* UIImageView+LBBlurredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+LBBlurredImage.h"; path = "ext/UIImageView+LBBlurredImage.h"; sourceTree = "<group>"; };
+		F718DF181C4D2BC100573251 /* UIImageView+LBBlurredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+LBBlurredImage.m"; path = "ext/UIImageView+LBBlurredImage.m"; sourceTree = "<group>"; };
+		F718DF1B1C4D2C8E00573251 /* HexColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HexColors.h; path = ext/HexColors.h; sourceTree = "<group>"; };
+		F718DF1C1C4D2C8E00573251 /* HexColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HexColors.m; path = ext/HexColors.m; sourceTree = "<group>"; };
+		F718DF1E1C4D3C6600573251 /* RACSignal+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RACSignal+Extensions.swift"; path = "ext/RACSignal+Extensions.swift"; sourceTree = "<group>"; };
+		F7BA76C31C4D20C00053DE3D /* CurrentTemperatureDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentTemperatureDataController.swift; path = CurrentTemp/CurrentTemperatureDataController.swift; sourceTree = "<group>"; };
+		F7ED94F11C4C1A7B005CC9FD /* SimpleWeather.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleWeather.storyboard; sourceTree = "<group>"; };
+		F7ED94F81C4C1BA8005CC9FD /* CurrentTemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentTemperatureViewController.swift; path = "View Controller/CurrentTemperatureViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +161,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F718DEFF1C4D290C00573251 /* Mantle.framework in Frameworks */,
+				F718DF001C4D290C00573251 /* ReactiveCocoa.framework in Frameworks */,
+				F718DF011C4D290C00573251 /* Result.framework in Frameworks */,
 				868735C61831A1E700C0CCFA /* CoreGraphics.framework in Frameworks */,
 				868735C81831A1E700C0CCFA /* UIKit.framework in Frameworks */,
 				868735C41831A1E700C0CCFA /* Foundation.framework in Frameworks */,
-				9339C4B352D241B0BA3026EF /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,12 +227,11 @@
 		868735B71831A1E700C0CCFA = {
 			isa = PBXGroup;
 			children = (
+				F718DF021C4D2A0200573251 /* ext */,
 				867A4FE91831DF0B003F9195 /* WXCondition.h */,
 				867A4FEA1831DF0B003F9195 /* WXCondition.m */,
 				867A4FA41831B19B003F9195 /* WXController.h */,
 				867A4FA51831B19B003F9195 /* WXController.m */,
-				F71192771C3EBB6E00EA1802 /* WXControllerDataSource.swift */,
-				F71192791C3EBBBA00EA1802 /* WXController.swift */,
 				F71192731C3EAC7300EA1802 /* WXViewModel.swift */,
 				F71192751C3EACA100EA1802 /* WXManager.swift */,
 				867A4FE01831DE8C003F9195 /* WXManager.h */,
@@ -237,11 +264,13 @@
 		868735C21831A1E700C0CCFA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F718DEFC1C4D290C00573251 /* Mantle.framework */,
+				F718DEFD1C4D290C00573251 /* ReactiveCocoa.framework */,
+				F718DEFE1C4D290C00573251 /* Result.framework */,
 				868735C31831A1E700C0CCFA /* Foundation.framework */,
 				868735C51831A1E700C0CCFA /* CoreGraphics.framework */,
 				868735C71831A1E700C0CCFA /* UIKit.framework */,
 				868735DC1831A1E700C0CCFA /* XCTest.framework */,
-				E9ED9A7D37514874BEF21452 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,8 +278,10 @@
 		868735C91831A1E700C0CCFA /* SimpleWeather */ = {
 			isa = PBXGroup;
 			children = (
+				F7BA76C21C4D205E0053DE3D /* CurrentTemp */,
 				868735D51831A1E700C0CCFA /* Images.xcassets */,
 				868735CA1831A1E700C0CCFA /* Supporting Files */,
+				F7ED94F11C4C1A7B005CC9FD /* SimpleWeather.storyboard */,
 			);
 			path = SimpleWeather;
 			sourceTree = "<group>";
@@ -293,6 +324,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F718DF021C4D2A0200573251 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				F718DF1B1C4D2C8E00573251 /* HexColors.h */,
+				F718DF1C1C4D2C8E00573251 /* HexColors.m */,
+				F718DF151C4D2BC100573251 /* UIImage+ImageEffects.h */,
+				F718DF161C4D2BC100573251 /* UIImage+ImageEffects.m */,
+				F718DF171C4D2BC100573251 /* UIImageView+LBBlurredImage.h */,
+				F718DF181C4D2BC100573251 /* UIImageView+LBBlurredImage.m */,
+				F718DF031C4D2A2500573251 /* TSBlurView.h */,
+				F718DF041C4D2A2500573251 /* TSBlurView.m */,
+				F718DF051C4D2A2500573251 /* TSMessage.h */,
+				F718DF061C4D2A2500573251 /* TSMessage.m */,
+				F718DF071C4D2A2500573251 /* TSMessageView.h */,
+				F718DF081C4D2A2500573251 /* TSMessageView.m */,
+				F718DF1E1C4D3C6600573251 /* RACSignal+Extensions.swift */,
+			);
+			name = ext;
+			sourceTree = "<group>";
+		};
+		F7BA76C21C4D205E0053DE3D /* CurrentTemp */ = {
+			isa = PBXGroup;
+			children = (
+				F7ED94F81C4C1BA8005CC9FD /* CurrentTemperatureViewController.swift */,
+				F7BA76C31C4D20C00053DE3D /* CurrentTemperatureDataController.swift */,
+			);
+			name = CurrentTemp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,12 +360,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 868735EC1831A1E700C0CCFA /* Build configuration list for PBXNativeTarget "SimpleWeather" */;
 			buildPhases = (
-				A50096CBED0440598E1A6B42 /* Check Pods Manifest.lock */,
 				868735BC1831A1E700C0CCFA /* Sources */,
 				868735BD1831A1E700C0CCFA /* Frameworks */,
 				868735BE1831A1E700C0CCFA /* Resources */,
-				C036182324DB4B2E9F4108AF /* Copy Pods Resources */,
-				A829A6A19BA5B92AD14323FF /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,6 +445,7 @@
 				867A4FCE1831C733003F9195 /* weather-mist@2x.png in Resources */,
 				867A4FDB1831C733003F9195 /* weather-tstorm.png in Resources */,
 				867A4FD71831C733003F9195 /* weather-shower.png in Resources */,
+				F7ED94F21C4C1A7B005CC9FD /* SimpleWeather.storyboard in Resources */,
 				867A4FCF1831C733003F9195 /* weather-moon.png in Resources */,
 				867A4FD21831C733003F9195 /* weather-rain-night@2x.png in Resources */,
 				867A4FDA1831C733003F9195 /* weather-snow@2x.png in Resources */,
@@ -413,70 +471,29 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		A50096CBED0440598E1A6B42 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A829A6A19BA5B92AD14323FF /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C036182324DB4B2E9F4108AF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		868735BC1831A1E700C0CCFA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F718DF0A1C4D2A2500573251 /* TSMessage.m in Sources */,
+				F7BA76C41C4D20C00053DE3D /* CurrentTemperatureDataController.swift in Sources */,
 				867A4FE81831DEA4003F9195 /* WXClient.m in Sources */,
 				867A4FE21831DE8C003F9195 /* WXManager.m in Sources */,
 				867A4FE51831DE99003F9195 /* WXDailyForecast.m in Sources */,
 				868735D41831A1E700C0CCFA /* AppDelegate.m in Sources */,
 				868735D01831A1E700C0CCFA /* main.m in Sources */,
 				867A4FA61831B19B003F9195 /* WXController.m in Sources */,
-				F711927A1C3EBBBA00EA1802 /* WXController.swift in Sources */,
+				F718DF1D1C4D2C8E00573251 /* HexColors.m in Sources */,
 				F71192761C3EACA100EA1802 /* WXManager.swift in Sources */,
-				F71192781C3EBB6E00EA1802 /* WXControllerDataSource.swift in Sources */,
+				F7ED94F91C4C1BA8005CC9FD /* CurrentTemperatureViewController.swift in Sources */,
 				867A4FEB1831DF0C003F9195 /* WXCondition.m in Sources */,
+				F718DF191C4D2BC100573251 /* UIImage+ImageEffects.m in Sources */,
+				F718DF091C4D2A2500573251 /* TSBlurView.m in Sources */,
+				F718DF1F1C4D3C6600573251 /* RACSignal+Extensions.swift in Sources */,
 				F71192741C3EAC7400EA1802 /* WXViewModel.swift in Sources */,
+				F718DF0B1C4D2A2500573251 /* TSMessageView.m in Sources */,
+				F718DF1A1C4D2BC100573251 /* UIImageView+LBBlurredImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -592,14 +609,18 @@
 		};
 		868735ED1831A1E700C0CCFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87B7A014A878E2034862B69D /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ext",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleWeather/SimpleWeather-Prefix.pch";
 				INFOPLIST_FILE = "SimpleWeather/SimpleWeather-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleWeather-Bridging-Header.h";
@@ -610,14 +631,18 @@
 		};
 		868735EE1831A1E700C0CCFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 129BC16E928ABD238A8D0698 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ext",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SimpleWeather/SimpleWeather-Prefix.pch";
 				INFOPLIST_FILE = "SimpleWeather/SimpleWeather-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleWeather-Bridging-Header.h";

@@ -8,7 +8,7 @@
 
 #import "WXManager.h"
 #import "WXClient.h"
-#import <TSMessages/TSMessage.h>
+#import "TSMessage.h"
 
 @interface WXManager ()
 

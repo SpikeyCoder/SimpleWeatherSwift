@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Ryan Nystrom. All rights reserved.
 //
 
-#import <Mantle.h>
+#import <Mantle/Mantle.h>
 
 @interface WXCondition : MTLModel <MTLJSONSerializing>
 
