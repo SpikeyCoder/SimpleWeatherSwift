@@ -3,3 +3,4 @@
 //
 
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "TSMessage.h"

@@ -16,26 +16,20 @@ class CurrentTemperatureDataController: NSObject {
     let apiKey = "8a9a4b36a224b8b0d349e971d321541f"
     override init() {
         self.currentTemperature = CurrentTemperature()
-        if let currentTempSignal:RACSignal = self.updateCurrentTemperature(){
-            RACObserve(self, keyPath: "currentLocation").flattenMap({ (newLocation:CLLocation) -> RACStream! in
-                return RACSignal.combineLatest([currentTempSignal])
-            })
-            
-            
-        }
-       
-//        RACObserve(self, currentLocation)
-//            ignore:nil]
-//            // Flatten and subscribe to all 3 signals when currentLocation updates
-//            flattenMap:^(CLLocation *newLocation) {
-//            return
+        super.init()
         
-                
-//                
-//                RACSignal.merge:[self.updateCurrentTemperature()];
-//            }] deliverOn:RACScheduler.mainThreadScheduler]
-//            subscribeError:^(NSError *error) {
-//            [TSMessage showNotificationWithTitle:@"Error" subtitle:@"There was a problem fetching the latest weather." type:TSMessageNotificationTypeError];
+        if let currentTempSignal:RACSignal = self.updateCurrentTemperature()
+        {
+            RACObserve(self, keyPath: "currentLocation").flattenMap({ (newLocation:AnyObject!) -> RACStream! in
+                return RACSignal.combineLatest([currentTempSignal])
+            }).deliverOn(RACScheduler.mainThreadScheduler()).subscribeError({ (error) -> Void in
+                TSMessage.showNotificationWithTitle("Error", subtitle: "There was a problem fetching the latest weather", type: TSMessageNotificationType.Error)
+            })
+        }
+        else
+        {
+            TSMessage.showNotificationWithTitle("Error", subtitle: "There was a problem fetching the latest weather", type: TSMessageNotificationType.Error)
+        }
     }
  
     func updateCurrentTemperature() -> RACSignal?
@@ -46,9 +40,7 @@ class CurrentTemperatureDataController: NSObject {
                 if let temp = temperature as? CurrentTemperature
                 {
                     self.currentTemperature = temp
-                }
-                
-            })!)!
+                }})!)!
         }
         return nil
     }
@@ -94,27 +86,4 @@ class CurrentTemperatureDataController: NSObject {
         }
     }
     
-}
-
-class CurrentTemperature
-{
-    var highTemp : String
-    var lowTemp : String
-    var currentTemp : String
-    var conditions : String
-    init()
-    {
-        self.highTemp = ""
-        self.lowTemp = ""
-        self.currentTemp = ""
-        self.conditions = ""
-    }
-    convenience init(highTemperature:String, lowTemperature:String, currentTemperature:String, weatherConditions:String)
-    {
-        self.init()
-        self.highTemp = highTemperature
-        self.lowTemp = lowTemperature
-        self.currentTemp = currentTemperature
-        self.conditions = weatherConditions
-    }
 }

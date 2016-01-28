@@ -7,14 +7,14 @@
 //
 
 #import "AppDelegate.h"
-#import "WXController.h"
+#import "SimpleWeather-Swift.h"
 #import "TSMessage.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[WXController alloc] init];
+    self.window.rootViewController = [[CurrentTemperatureViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
