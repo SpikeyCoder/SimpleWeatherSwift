@@ -72,6 +72,7 @@
 		F7BA76C41C4D20C00053DE3D /* CurrentTemperatureDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BA76C31C4D20C00053DE3D /* CurrentTemperatureDataController.swift */; };
 		F7ED94F21C4C1A7B005CC9FD /* SimpleWeather.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7ED94F11C4C1A7B005CC9FD /* SimpleWeather.storyboard */; };
 		F7ED94F91C4C1BA8005CC9FD /* CurrentTemperatureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7ED94F81C4C1BA8005CC9FD /* CurrentTemperatureViewController.swift */; };
+		F7F2B8A11C62DF93002E9B71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F2B8A01C62DF93002E9B71 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,7 @@
 		F7BA76C31C4D20C00053DE3D /* CurrentTemperatureDataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentTemperatureDataController.swift; path = CurrentTemp/CurrentTemperatureDataController.swift; sourceTree = "<group>"; };
 		F7ED94F11C4C1A7B005CC9FD /* SimpleWeather.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SimpleWeather.storyboard; sourceTree = "<group>"; };
 		F7ED94F81C4C1BA8005CC9FD /* CurrentTemperatureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentTemperatureViewController.swift; path = "View Controller/CurrentTemperatureViewController.swift"; sourceTree = "<group>"; };
+		F7F2B8A01C62DF93002E9B71 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +311,7 @@
 				868735D51831A1E700C0CCFA /* Images.xcassets */,
 				868735CA1831A1E700C0CCFA /* Supporting Files */,
 				F7ED94F11C4C1A7B005CC9FD /* SimpleWeather.storyboard */,
+				F7F2B8A01C62DF93002E9B71 /* LaunchScreen.storyboard */,
 			);
 			path = SimpleWeather;
 			sourceTree = "<group>";
@@ -461,6 +464,7 @@
 				867A4FDC1831C733003F9195 /* weather-tstorm@2x.png in Resources */,
 				867A4FC51831C733003F9195 /* weather-broken.png in Resources */,
 				867A4FC91831C733003F9195 /* weather-few-night.png in Resources */,
+				F7F2B8A11C62DF93002E9B71 /* LaunchScreen.storyboard in Resources */,
 				867A4FC71831C733003F9195 /* weather-clear.png in Resources */,
 				867A4FD61831C733003F9195 /* weather-scattered@2x.png in Resources */,
 				867A4FD41831C733003F9195 /* weather-rain@2x.png in Resources */,
